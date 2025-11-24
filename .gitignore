@@ -1,0 +1,25 @@
+# AI Tool Coordination (auto-generated, do not commit)
+.claude/
+.claude-flow/
+.swarm/
+.aider/
+.cursor/
+.copilot/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
