@@ -15,12 +15,13 @@ xarf-parser-tests/
 │   ├── valid/                         # Valid XARF reports (should parse successfully)
 │   │   ├── v4/                        # XARF v4 valid samples
 │   │   │   ├── messaging/             # Valid messaging class reports
-│   │   │   ├── connection/            # Valid connection class reports  
+│   │   │   ├── connection/            # Valid connection class reports
 │   │   │   ├── content/               # Valid content class reports
 │   │   │   ├── infrastructure/        # Valid infrastructure class reports
 │   │   │   ├── copyright/             # Valid copyright class reports
 │   │   │   ├── vulnerability/         # Valid vulnerability class reports
-│   │   │   └── reputation/            # Valid reputation class reports
+│   │   │   ├── reputation/            # Valid reputation class reports
+│   │   │   └── examples/              # XARF v4 example reports (reporter/sender scenarios)
 │   │   └── v3/                        # XARF v3 valid samples (backward compatibility)
 │   └── invalid/                       # Invalid XARF reports (should fail validation)
 │       ├── schema_violations/         # JSON schema validation failures
