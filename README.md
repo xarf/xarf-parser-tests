@@ -15,12 +15,13 @@ xarf-parser-tests/
 │   ├── valid/                         # Valid XARF reports (should parse successfully)
 │   │   ├── v4/                        # XARF v4 valid samples
 │   │   │   ├── messaging/             # Valid messaging class reports
-│   │   │   ├── connection/            # Valid connection class reports  
+│   │   │   ├── connection/            # Valid connection class reports
 │   │   │   ├── content/               # Valid content class reports
 │   │   │   ├── infrastructure/        # Valid infrastructure class reports
 │   │   │   ├── copyright/             # Valid copyright class reports
 │   │   │   ├── vulnerability/         # Valid vulnerability class reports
-│   │   │   └── reputation/            # Valid reputation class reports
+│   │   │   ├── reputation/            # Valid reputation class reports
+│   │   │   └── examples/              # XARF v4 example reports (reporter/sender scenarios)
 │   │   └── v3/                        # XARF v3 valid samples (backward compatibility)
 │   └── invalid/                       # Invalid XARF reports (should fail validation)
 │       ├── schema_violations/         # JSON schema validation failures
@@ -50,12 +51,36 @@ git subtree add --prefix=tests/shared https://github.com/xarf/xarf-parser-tests.
 git subtree pull --prefix=tests/shared https://github.com/xarf/xarf-parser-tests.git main --squash
 ```
 
+## Reporter vs Sender Structure
+
+XARF v4 introduces distinct `reporter` and `sender` fields to support different reporting scenarios:
+
+### Direct Reporting (reporter = sender)
+When an organization directly reports abuse they've observed on their own network:
+- **Example**: An ISP reporting a port scan originating from their customer's IP
+- **Sample**: `samples/valid/v4/examples/reporter_sender_same.json`
+- **Both fields contain identical information**
+
+### Third-Party Reporting (reporter ≠ sender)
+When a service reports abuse on behalf of a client organization:
+- **Example**: Abusix reporting spam detected on behalf of a client ISP
+- **Sample**: `samples/valid/v4/examples/reporter_sender_different.json`
+- **Reporter**: The organization submitting the report (e.g., abuse reporting service)
+- **Sender**: The organization whose network the abuse originated from (e.g., ISP)
+
+**Key Points**:
+- The `reporter` field identifies who is submitting the XARF report
+- The `sender` field identifies the network/organization responsible for the source
+- Both fields support `org`, `contact`, and `domain` attributes
+- When reporting directly, both fields should contain identical values
+- Third-party services should populate both fields with appropriate organizations
+
 ## Test Categories
 
 ### Valid Samples (`samples/valid/`)
 - **Purpose**: Ensure parsers correctly parse valid XARF reports
 - **Expectation**: All samples should parse successfully without errors
-- **Coverage**: All 7 abuse classes, various evidence types, edge cases
+- **Coverage**: All 7 abuse classes, various evidence types, edge cases, reporter/sender scenarios
 - **Sources**: Anonymized real-world reports, synthetic test cases
 
 ### Invalid Samples (`samples/invalid/`)

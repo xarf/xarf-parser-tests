@@ -5,7 +5,12 @@
 	"reporter": {
 		"org": "YBrandProtection",
 		"contact": "takedown@ybrandprotection.com",
-		"type": "automated"
+		"domain": "ybrandprotection.com"
+	},
+	"sender": {
+		"org": "YBrandProtection",
+		"contact": "takedown@ybrandprotection.com",
+		"domain": "ybrandprotection.com"
 	},
 	"source_identifier": "203.0.113.45",
 	"type": "phishing",

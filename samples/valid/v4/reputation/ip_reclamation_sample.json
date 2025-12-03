@@ -5,7 +5,12 @@
 	"reporter": {
 		"org": "IP Reputation Service",
 		"contact": "reclamation@ipreputation.org",
-		"type": "manual"
+		"domain": "ipreputation.org"
+	},
+	"sender": {
+		"org": "IP Reputation Service",
+		"contact": "reclamation@ipreputation.org",
+		"domain": "ipreputation.org"
 	},
 	"source_identifier": "203.0.113.175",
 	"type": "ip_reclamation",

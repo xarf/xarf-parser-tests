@@ -5,7 +5,12 @@
 	"reporter": {
 		"org": "Mobile Security Research",
 		"contact": "whatsapp-abuse@mobile-security.org",
-		"type": "manual"
+		"domain": "mobile-security.org"
+	},
+	"sender": {
+		"org": "Mobile Security Research",
+		"contact": "whatsapp-abuse@mobile-security.org",
+		"domain": "mobile-security.org"
 	},
 	"source_identifier": "+447955527026",
 	"type": "social_engineering",

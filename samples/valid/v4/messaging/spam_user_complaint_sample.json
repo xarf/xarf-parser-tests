@@ -5,7 +5,12 @@
 	"reporter": {
 		"org": "Example Security",
 		"contact": "abuse@example.com",
-		"type": "manual"
+		"domain": "example.com"
+	},
+	"sender": {
+		"org": "Example Security",
+		"contact": "abuse@example.com",
+		"domain": "example.com"
 	},
 	"source_identifier": "209.85.220.65",
 	"source_port": 25,

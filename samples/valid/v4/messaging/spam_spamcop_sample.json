@@ -5,7 +5,12 @@
 	"reporter": {
 		"org": "Example Anti-Spam Service",
 		"contact": "reports@antispam-service.example",
-		"type": "automated"
+		"domain": "antispam-service.example"
+	},
+	"sender": {
+		"org": "Example Anti-Spam Service",
+		"contact": "reports@antispam-service.example",
+		"domain": "antispam-service.example"
 	},
 	"source_identifier": "192.168.1.100",
 	"source_port": 25,

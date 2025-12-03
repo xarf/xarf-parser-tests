@@ -5,7 +5,12 @@
 	"reporter": {
 		"org": "Abusix",
 		"contact": "abuse@abusix.com",
-		"type": "automated"
+		"domain": "abusix.com"
+	},
+	"sender": {
+		"org": "Abusix",
+		"contact": "abuse@abusix.com",
+		"domain": "abusix.com"
 	},
 	"source_identifier": "35.243.100.5",
 	"source_port": 25,

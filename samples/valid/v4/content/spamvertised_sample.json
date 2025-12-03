@@ -5,7 +5,12 @@
 	"reporter": {
 		"org": "Spam Analysis Center",
 		"contact": "spamvertised@spamanalysis.org",
-		"type": "automated"
+		"domain": "spamanalysis.org"
+	},
+	"sender": {
+		"org": "Spam Analysis Center",
+		"contact": "spamvertised@spamanalysis.org",
+		"domain": "spamanalysis.org"
 	},
 	"source_identifier": "198.51.100.222",
 	"type": "spamvertised",

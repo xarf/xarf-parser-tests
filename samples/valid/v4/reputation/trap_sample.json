@@ -5,7 +5,12 @@
 	"reporter": {
 		"org": "Honeypot Research Network",
 		"contact": "traps@honeypot-research.org",
-		"type": "automated"
+		"domain": "honeypot-research.org"
+	},
+	"sender": {
+		"org": "Honeypot Research Network",
+		"contact": "traps@honeypot-research.org",
+		"domain": "honeypot-research.org"
 	},
 	"source_identifier": "198.51.100.199",
 	"type": "trap",

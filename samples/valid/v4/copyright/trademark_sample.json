@@ -5,7 +5,12 @@
 	"reporter": {
 		"org": "Brand Protection Agency",
 		"contact": "trademark@brandprotection.legal",
-		"type": "manual"
+		"domain": "brandprotection.legal"
+	},
+	"sender": {
+		"org": "Brand Protection Agency",
+		"contact": "trademark@brandprotection.legal",
+		"domain": "brandprotection.legal"
 	},
 	"source_identifier": "192.0.2.220",
 	"type": "trademark",

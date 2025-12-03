@@ -7,6 +7,11 @@
 		"contact": "reports@security-service.example",
 		"type": "automated"
 	},
+	"sender": {
+		"org": "Example Security Service",
+		"contact": "reports@security-service.example",
+		"type": "automated"
+	},
 	"source_identifier": "192.168.1.100",
 	"type": "spam",
 	"evidence_source": "spamtrap",

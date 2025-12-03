@@ -5,7 +5,12 @@
 	"reporter": {
 		"org": "Account Security Monitor",
 		"contact": "breaches@accountsec.net",
-		"type": "automated"
+		"domain": "accountsec.net"
+	},
+	"sender": {
+		"org": "Account Security Monitor",
+		"contact": "breaches@accountsec.net",
+		"domain": "accountsec.net"
 	},
 	"source_identifier": "198.51.100.88",
 	"type": "compromised_account",

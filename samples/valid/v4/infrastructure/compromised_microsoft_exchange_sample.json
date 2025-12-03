@@ -5,7 +5,12 @@
 	"reporter": {
 		"org": "Microsoft Exchange Security Team",
 		"contact": "exchange-security@enterprise-vendor.example",
-		"type": "automated"
+		"domain": "enterprise-vendor.example"
+	},
+	"sender": {
+		"org": "Microsoft Exchange Security Team",
+		"contact": "exchange-security@enterprise-vendor.example",
+		"domain": "enterprise-vendor.example"
 	},
 	"source_identifier": "172.16.10.50",
 	"source_port": 443,
