@@ -5,7 +5,12 @@
 	"reporter": {
 		"org": "Web Application Security Scanner",
 		"contact": "webhacks@appsec.monitor",
-		"type": "automated"
+		"domain": "appsec.monitor"
+	},
+	"sender": {
+		"org": "Web Application Security Scanner",
+		"contact": "webhacks@appsec.monitor",
+		"domain": "appsec.monitor"
 	},
 	"source_identifier": "192.0.2.133",
 	"type": "web_hack",

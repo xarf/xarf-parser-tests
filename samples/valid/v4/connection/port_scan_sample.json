@@ -5,7 +5,12 @@
 	"reporter": {
 		"org": "Network Security Monitoring",
 		"contact": "alerts@netsec-mon.com",
-		"type": "automated"
+		"domain": "netsec-mon.com"
+	},
+	"sender": {
+		"org": "Network Security Monitoring",
+		"contact": "alerts@netsec-mon.com",
+		"domain": "netsec-mon.com"
 	},
 	"source_identifier": "198.51.100.150",
 	"type": "port_scan",

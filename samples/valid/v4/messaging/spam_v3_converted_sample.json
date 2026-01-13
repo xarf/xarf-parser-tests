@@ -6,7 +6,12 @@
 	"reporter": {
 		"org": "Legacy Spam Reporter",
 		"contact": "abuse@legacy-reporter.com",
-		"type": "unknown"
+		"domain": "legacy-reporter.com"
+	},
+	"sender": {
+		"org": "Legacy Spam Reporter",
+		"contact": "abuse@legacy-reporter.com",
+		"domain": "legacy-reporter.com"
 	},
 	"source_identifier": "203.0.113.75",
 	"source_port": 25,

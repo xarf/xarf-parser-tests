@@ -5,7 +5,12 @@
 	"reporter": {
 		"org": "Example Security Vendor",
 		"contact": "abuse@security-vendor.example",
-		"type": "manual"
+		"domain": "security-vendor.example"
+	},
+	"sender": {
+		"org": "Example Security Vendor",
+		"contact": "abuse@security-vendor.example",
+		"domain": "security-vendor.example"
 	},
 	"source_identifier": "malicious-example.net",
 	"type": "phishing_site",

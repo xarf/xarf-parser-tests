@@ -73,7 +73,7 @@
         },
         {
           "name": "v4_reputation",
-          "path": "v4/reputation", 
+          "path": "v4/reputation",
           "description": "XARF v4 reputation class reports",
           "requirements": [
             "Parser must successfully parse all samples",
@@ -82,12 +82,22 @@
           ]
         },
         {
+          "name": "v4_examples",
+          "path": "v4/examples",
+          "description": "XARF v4 example reports demonstrating reporter/sender scenarios",
+          "requirements": [
+            "Parser must successfully parse all samples",
+            "Both reporter and sender fields must be preserved",
+            "Examples demonstrate correct reporter=sender and reporter≠sender patterns"
+          ]
+        },
+        {
           "name": "v3_backward_compatibility",
           "path": "v3",
           "description": "XARF v3 reports for backward compatibility testing",
           "requirements": [
             "Parser must successfully parse v3 format",
-            "Automatic conversion to v4 structure should occur", 
+            "Automatic conversion to v4 structure should occur",
             "Core abuse information must be preserved",
             "Class mapping from v3 to v4 must be correct"
           ]
